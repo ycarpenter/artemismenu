@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    /*height: 100%;*/
+    width: 100%;
+    background-color: #191918;
+    color: rgb(203,173,98);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeSpeed;
+    text-align: center;
+}
+.page {
+    background: url("../img/backgroundHall1.jpeg") 0 0 / cover no-repeat;
+    /*display: grid;*/
+    margin-bottom: 2rem;
+}
+
+/*@media (max-width: 645px ) {*/
+/*    .page {*/
+/*        background: url("../img/backgroundHall1.jpeg") 0 0 / cover no-repeat;*/
+/*    }*/
+/*}*/
+
+
+/*@media (min-width: 375px ) {
+    .page {
+        background: url("../img/backgroundHall1.jpeg") 0 0 / cover no-repeat;
+    }
+}*/
+
+.page__wrapper {
+    background: rgba(25, 25, 24, 0.6);
+    display: grid;
+}
+
+
+.header {
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__title {
+    text-align: center;
+    color: #cbad62;
+}
+
+h1 {
+    font-size: 6em;
+    color: #cbad62;
+    margin: 5rem 0 15rem 0;
+}
+
+h2 {
+    display: block;
+    margin-bottom: 1.3rem;
+}
+/*/*@media screen  and (max-width: 645px){*/
+/*/*    .navigation__title {*/
+/*/*        font-size: 2em;*/
+/*/*    }*/
+/*/*}*/
+/*@media screen  and (max-width: 375px){
+    .navigation__title {
+        font-size: 1.3em;
+    }
+}*/
+
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7rem;
+}
+
+.nav__button {
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: #191918;
+    border-style: none;
+    padding: 0.3rem 0.8rem;
+    text-decoration: none;
+    color: #cbad62;
+    position: relative;
+    cursor: pointer;
+}
+
+.button__link {
+    text-decoration: none;
+    color: #cbad62;
+}
+
+
+.navigation__logo {
+    margin-top: 3em;
+}
+
+.open__header:before {
+    left: -1vw;
+}
+
+.open__header:after {
+    right: -1vw;
+}
+
+.open__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.open__hours {
+    display: block;
+    font-size: 2rem;
+}
+.lunch {
+    margin: 5vw 0;
+}
+
+.lunch__header:before {
+    left: -1vw;
+    width: 29vw;
+}
+.lunch__header:after {
+    right: -1vw;
+    width: 29vw;
+}
+
+
+.lunch__dishes-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.lunch__dishes {
+    margin-top: 3vh;
+}
+
+.lunch__weight {
+    opacity: 50%;
+    font-size: 10px;
+    color: #fffdfc;
+    margin: -1vh 0 0.5vh 0;
+}
+
+.open__header:before, .open__header:after,
+.lunch__header:before,
+.special__header:before, .about__header:before,
+.reservation__header:before,
+.lunch__header:after,
+.special__header:after, .about__header:after,
+.reservation__header:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 27.4vw;
+    height: 1px;
+    background: #cbad62;
+    position: relative;
+}
+
+/*@media screen and (min-width: 645px) {*/
+/*    .line__header:before {*/
+/*        left: -3vw;*/
+/*    }*/
+
+/*    .line__header:before {*/
+/*        right: -3vw;*/
+/*    }*/
+/*}*/
+
+.special__header:before {
+    left: -1vw;
+    width: 21vw;
+}
+
+.special__header:after {
+    right: -1vw;
+    width: 21vw;
+}
+
+.special__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 5vw;
+    border-bottom: rgb(203,173,98) solid 1px;
+    padding-bottom: 5vw;
+}
+
+.special__title {
+    color: rgb(203,173,98);
+    font-size: 1.6rem;
+}
+
+/*.about__header:before {*/
+/*    margin-left: -100%;*/
+/*    left: -1vw;*/
+/*    width: 31.3vw;*/
+/*}*/
+
+/*.about__header:after {*/
+/*    margin-right: -100%;*/
+/*    right: -1vw;*/
+/*    width: 31.3vw;*/
+/*}*/
+
+/*.about__desc, .reservation__desc {*/
+/*    margin: 0 14vw*/
+/*}*/
+
+.reservation__header:before {
+    left: -1vw;
+    width: 21vw;
+}
+
+.reservation__header:after {
+    right: -1vw;
+    width: 21vw;
+}
+
+.reservation__desc {
+    margin-bottom: 1.3rem;
+}
+
+.footer {
+    background-color: #cbad62;
+    color: #191918;
+    font-size: 1.5rem;
+}
+
+.footer__logo {
+    display: grid;
+     align-items: center;
+    justify-items: center;
+}
+
+.footer__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    text-align: center;
+}
+
+.footer__title {
+    display: grid;
+    text-align: center;
+    margin: 3vh 0 3vh 0;
+}
+
+.footer__link {
+    color: #191918;
+    font-size: 1.1rem;
+}
+
+.footer__social-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social {
+    margin-right: 2vh;
+}
+
+
+
+.footer__qrcode {
+    width: 2rem;
+}
